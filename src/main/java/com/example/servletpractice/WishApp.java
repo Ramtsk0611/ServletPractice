@@ -8,15 +8,10 @@ public class WishApp extends HttpServlet
 {
     public void service(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException
     {
-        //set response content type
         res.setContentType("text/html");
-        //get printWrite obj
         PrintWriter pw = res.getWriter();
-        //write request processing logic to generate wish message
         Calendar cal = Calendar.getInstance();
-        //get current hours of the day
-        int hour = cal.get(Calendar.HOUR_OF_DAY);//24 hrs format
-        //generate wish message
+        int hour = cal.get(Calendar.HOUR_OF_DAY);
         if(hour<12)
             pw.println("Good Morning!!");
         else if (hour < 16)
