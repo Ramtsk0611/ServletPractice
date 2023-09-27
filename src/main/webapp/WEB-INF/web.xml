@@ -88,8 +88,9 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>Counter</servlet-name>
-        <url-pattern>Counter</url-pattern>
+        <url-pattern>/Counter</url-pattern>
     </servlet-mapping>
+
     <servlet>
         <servlet-name>AddCookie</servlet-name>
         <servlet-class>com.example.servletpractice.AddCookies</servlet-class>
@@ -98,6 +99,7 @@
         <servlet-name>AddCookie</servlet-name>
         <url-pattern>/servlet/cookies</url-pattern>
     </servlet-mapping>
+
     <servlet>
         <servlet-name>MobileDetails</servlet-name>
         <servlet-class>com.example.servletpractice.MobileDetails</servlet-class>
@@ -106,6 +108,7 @@
         <servlet-name>MobileDetails</servlet-name>
         <url-pattern>/servlet/MobileDetails</url-pattern>
     </servlet-mapping>
+
     <servlet>
         <servlet-name>voter</servlet-name>
         <servlet-class>com.example.servletpractice.VoterServlet</servlet-class>
