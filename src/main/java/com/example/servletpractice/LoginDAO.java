@@ -9,10 +9,9 @@ public class LoginDAO
         try
         {
             Class.forName("oracle.jdbc.driver.OracleDriver");
-            Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","local","test");
+            Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:XE","system","system");
 
-            PreparedStatement ps=con.prepareStatement(
-                    "select * from userreg where name=? and pass=?");
+            PreparedStatement ps=con.prepareStatement("select * from userreg where name=? and password=?");
             ps.setString(1,name);
             ps.setString(2,pass);
             ResultSet rs=ps.executeQuery();
